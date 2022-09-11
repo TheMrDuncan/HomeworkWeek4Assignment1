@@ -11,8 +11,7 @@ class DescriptionViewController: UIViewController {
 
     @IBOutlet weak var ItemImage: UIImageView!
     @IBOutlet weak var ItemName: UILabel!
-    @IBOutlet weak var ItemDesc: UILabel!
-    
+    @IBOutlet weak var ItemDescription: UITextView!
     
     var menuItem: MenuItem?
     
@@ -23,7 +22,7 @@ class DescriptionViewController: UIViewController {
             ItemImage.image = UIImage(named: imageName)
         }
         ItemName.text = menuItem?.name
-        ItemDesc.text = menuItem?.description
+        ItemDescription.text = menuItem?.description
         
         // Do any additional setup after loading the view.
     }
