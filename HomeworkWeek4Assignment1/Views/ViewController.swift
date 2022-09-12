@@ -6,12 +6,18 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var tableView: UITableView!
     
+    @IBSegueAction func showDetailsView(_ coder: NSCoder) -> UIViewController? {
+        UIHostingController(coder: coder, rootView: DetailsView(passedInImage: burger.image, passedInName: burger.name, passedInDescription: burger.description))
+    }
+    
     let myBurgers = burgers
+    var burger = burgers[0]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +29,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let burger = myBurgers[indexPath.row]
+        burger = myBurgers[indexPath.row]
         performSegue(withIdentifier: "ShowBurgerDetails", sender: burger)
     }
     
