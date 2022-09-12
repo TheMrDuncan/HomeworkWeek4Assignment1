@@ -16,6 +16,7 @@
 		292440A628CE56EC00C2F80B /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292440A528CE56EC00C2F80B /* MenuItem.swift */; };
 		292440A828CE579400C2F80B /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292440A728CE579400C2F80B /* Menu.swift */; };
 		292440AA28CE668900C2F80B /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292440A928CE668900C2F80B /* DescriptionViewController.swift */; };
+		292440AC28CECF6500C2F80B /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292440AB28CECF6500C2F80B /* DetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		292440A528CE56EC00C2F80B /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		292440A728CE579400C2F80B /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		292440A928CE668900C2F80B /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		292440AB28CECF6500C2F80B /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				2924409328CE499900C2F80B /* ViewController.swift */,
 				292440A928CE668900C2F80B /* DescriptionViewController.swift */,
+				292440AB28CECF6500C2F80B /* DetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2924409428CE499900C2F80B /* ViewController.swift in Sources */,
+				292440AC28CECF6500C2F80B /* DetailsView.swift in Sources */,
 				292440A628CE56EC00C2F80B /* MenuItem.swift in Sources */,
 				2924409028CE499900C2F80B /* AppDelegate.swift in Sources */,
 				292440AA28CE668900C2F80B /* DescriptionViewController.swift in Sources */,
