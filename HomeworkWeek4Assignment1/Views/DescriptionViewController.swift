@@ -18,9 +18,9 @@ class DescriptionViewController: UIViewController {
         
         let childView = UIHostingController(rootView: DetailsView(passedInImage: menuItem?.image ?? "", passedInName: menuItem?.name ?? "", passedInDescription: menuItem?.description ?? ""))
         addChild(childView)
-//        childView.view.frame = frame
+        childView.view.frame = UIScreen.main.bounds
         view.addSubview(childView.view)
-//        childView.didMove(toParent: self)
+        childView.didMove(toParent: self)
         
 
     }
