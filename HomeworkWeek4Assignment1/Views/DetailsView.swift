@@ -24,8 +24,9 @@ struct DetailsView: View {
                     .frame(width: 150, height: 150)
 
                 Text(name)
-                    .font(.caption)
+                    .font(.body)
                 Text(description)
+                    .font(.caption)
 
             }
 //            .frame(minWidth: (200),  minHeight: (200))
